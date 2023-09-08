@@ -179,15 +179,27 @@
         <!-- footer -->
         <footer>
             <!-- email signup -->
-            Mail listemize katılın!
-            Üye Ol
+            <form action="/action_page.php">
+                <label for="fname">Mail listemize katılın!</label>
+                </br>
+                <input type="email" id="fname" name="fname" value="" placeholder="E-posta Adresi">
+
+                <button type="submit">Üye Ol</button>
+            </form>
             <!-- nav -->
-            Menü
-            Rezervasyonlar
-            Özel Teklifler
-            İletişim
-            <!-- copyright -->
-            ©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.
+            <div>
+                <nav>
+                    <div class="header__menu">
+                        <a href="./menu.html">Menü</a>
+                        <a href="./rezervasyonlar.html">Rezervasyonlar</a>
+                        <a href="./ozel-teklifler.html">Özel Teklifler</a>
+                        <a href="./iletisim.html">İletişim</a>
+                    </div>
+
+                </nav>
+                <!-- copyright -->
+                <p>©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.</p>
+            </div>
         </footer>
     </div>
 </body>
