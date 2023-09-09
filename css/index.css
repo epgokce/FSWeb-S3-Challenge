@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    color: white
 }
 
 html {
@@ -82,11 +83,7 @@ h3 {
 p, a {
     font-size: 3rem;
 }
-/* TODO
-remove me later */
-* {
-    border: 1px solid lime !important;
-  }
+
 /* header section */
 header {
     width: 100%;
@@ -97,12 +94,13 @@ header {
     background-repeat: no-repeat;
 }
 
+
 .header__container {
-    background-color: rgb(0, 145, 255);
+    background-color: rgb(6, 32, 53);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 header nav {
@@ -119,6 +117,7 @@ header nav {
     justify-content: space-between;
     max-width: var(--desktop-max-width);
     margin: 0 auto;
+    padding: 3%;
   }
   
   .header__social {
@@ -126,18 +125,18 @@ header nav {
     justify-content: center;
     gap: 10rem;
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 /* spacers */
 .spacer {
     width: 100%;
     height: 20vh;
-    background-color: rgb(0, 4, 17);
+    background-color: rgb(6, 32, 53);
 }
 .spacer-sm {
     width: 100%;
     height: 10vh;
-    background-color: rgb(0, 4, 17);
+    background-color: rgb(6, 32, 53);
 }
 
 /* gallery section */
@@ -145,9 +144,16 @@ header nav {
     width: 100%;
     height: 100vh;
     text-align: center;
-    background-color: rgb(0, 4, 17);
+    background-color: rgb(6, 32, 53);
 }
-
+.gallery img {
+    margin: 2rem;
+  }
+  
+  .gallery h2 {
+    margin: 1rem auto;
+  }
+  
 /* about us section */
 .about {
     width: 100%;
@@ -170,10 +176,13 @@ header nav {
 
 .about h2 {
     width: 100%;
+    margin: 5rem auto;
 }
+
 
 .about-container .text {
     width: 50%;
+    line-height: 1.2;
 }
 
 /* contact us section */
@@ -226,10 +235,29 @@ header nav {
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
-    padding-top: 2.5vh;
-    font-size: 3rem;
+  padding-top: 2.5vh;
+  font-size: 3rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
 }
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+  }
+  
+  footer form input,
+  footer form button {
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    color: black;
+  }
+  
+  footer form input {
+    width: 400px;
+  }
 
 /* mobile media query */
 @media (max-width: 428px) {
