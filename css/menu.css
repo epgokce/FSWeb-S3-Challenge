@@ -95,20 +95,22 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}.header__container {
+}
+.header__container {
     background-color: rgb(6, 32, 53);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-header nav {
+.header nav {
     align-self: stretch;
   }
   
   * {
     --desktop-max-width: 1180px;
+    color: white;
   }
   
   .header__menu {
@@ -117,7 +119,7 @@ header nav {
     justify-content: space-between;
     max-width: 1080px;
     margin: 0 auto;
-    padding: 3%;
+    
   }
   
   .header__social {
@@ -150,21 +152,22 @@ header nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
-menu h2{
+
+.menu h2 {
     font-size: 6rem;
     text-align: center;
     margin: 2rem 0;
-}
+  }
 
-.menu-container {
+  .menu-container {
     max-width: 1080px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 2rem auto;
-}
+  }
+
 
  .menu-section {
     flex-basis: 500px;
@@ -175,17 +178,18 @@ menu h2{
     justify-content: space-between;
     margin-bottom: 1rem;
     flex-wrap: wrap;
-    text-align: center;
+    
  }
- .menu-item h4
-.menu-item p {
+
+   
+.menu__desc  {
   width: 100%;
 }
 
 
 /* footer section */
 footer {
-    width: 100%;
+  width: 100%;
   padding-top: 2.5vh;
   font-size: 3rem;
   background-color: black;
@@ -223,14 +227,19 @@ footer form {
     /* menu */
     .menu {
         background-image: none;
-    }
-    .menu-item h4
-    .menu-item p {
-        flex-basis: 100%;
-        background-image: none;
-        background-color: aliceblue;
-        padding: 0  5rem;
+        background-color: rgb(141, 141, 141);
+        padding: 0 5rem;
         text-align: center;
+    
+    }
+ 
+    
+    .menu__desc  {
+        flex-basis: 100%;
+       
+        }
+        .menu-section {
+            flex-basis: 500px;
         }
     /* footer section */
     footer {
